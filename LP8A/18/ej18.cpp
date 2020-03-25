@@ -1,13 +1,33 @@
+//¿N es primo?
+
 #include <iostream>
 using namespace std;
-int main()
+int main() 
 {
+	int divisor = 1, divisores = 0, num = 0;
+	cout<<"Ingrese numero: "<<endl;
+	cin>>num;
 
-	int n;
+	do
+	{
+		if(num % divisor == 0)
+		{
+			divisores++;
+		}
+	divisor++;
+	}
 
-	cin>>n;
+	while(divisor <= num);
 
-cout<<n<<"¿  es primo?"<<endl;
-
+	if(divisores == 2)
+	{
+		cout<<"El numero es PRIMO:"<<endl;
+		cout<<num<<endl;
+	}
+	else
+	{
+		cout<<"El numero NO es PRIMO:"<<endl;
+		cout<<num<<endl;
+	}
 return 0;
-} 
+}

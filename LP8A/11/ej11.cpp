@@ -1,16 +1,13 @@
+//Diseñar un diagrama que permita realizar un contador e imprimir los 100 primeros números enteros.
+
 #include <iostream>
 using namespace std;
 int main()
 {
-	int c;
-	int n;
-
-	cin>>c; 
-	cin>>n;
-
-cout<<"Diseñar Diagrama (Contador): "<<c<<endl; 
-cout<<"100 Numeros enteros"<<n<<endl;
-
+	int i;
+	for(int i=1;i<=100;i++)
+	{
+		cout<<i<<endl;
+	}
 return 0;
-
 }

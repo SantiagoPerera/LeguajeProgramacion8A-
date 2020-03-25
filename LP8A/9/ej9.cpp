@@ -1,15 +1,18 @@
+//Calcular la media de cincuenta números e imprimir su resultado.
+
 #include <iostream>
 using namespace std;
 int main()
 {
+	int N, Media;
 
-	int n;
-	int md;
+	for(int i=1;i<=50;i++)
+	{
+		N+=i;
+	}
 
-	cin>>n;
-	cin>>md;
+	Media=(N/50);
 
-cout<<"Resultdo Media: "<<md<<endl;
-
-return 0;
-}
+cout<<"Media: "<<Media<<endl;
+return 0; 
+} 
